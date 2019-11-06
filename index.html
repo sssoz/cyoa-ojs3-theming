@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Choose your own adventure: Customise your journal</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script defer type="text/javascript" src="main.js"></script>
+
+	<meta name="theme-color" content="#282624">
+</head>
+<body>
+	<!--[if IE]>
+	<p class="browserupgrade">You are using an outdated browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+	<header class="main-header">
+		<div class="container">
+			<h1>What goes into a journal’s identity?</h1>
+			<p>If you don’t have a journal to work on, you may download this <a href="#" title="Download sample assets">compressed file</a> containing some sample assets (logos, images, colour palettes).</p>
+		</div>
+	</header>
+
+	<main>
+		<!-- Colour palette choices -->
+		<section class="building-block">
+			<header class="building-block__header" onclick="showStep(colours);">
+				<h2>Colour palette</h2>
+			</header>
+
+			<section id="colours" class="building-block__body">
+				<div class="container building-block__intro arrow-down">
+					<p>Find inspiration through mood boarding, collecting images, appreciating other sites’ design, your own tastes.</p>
+					<ul>
+						<li>
+							From UI and graphic design sites —
+							<ul>
+								<li><a href="https://eyeondesign.aiga.org/" target="_blank">AIGA Eye on Design</a></li>
+								<li><a href="https://dribbble.com/colors/ " target="_blank">Dribbble’s search by colour</a></li>
+							</ul>
+						</li>
+						<li>
+							Various art blogs —
+							<ul>
+								<li><a href="https://butdoesitfloat.com/" target="_blank">But does it float?</a></li>
+								<li><a href="https://www.itsnicethat.com/" target="_blank">It’s Nice That</a></li>
+							</ul>
+						</li>
+						<li>Anywhere: (scholarly or non-scholarly) websites, library archives, art books, architecture, Instagram, Pinterest&hellip;</li>
+					</ul>
+				</div>
+
+				<div class="container building-block__cost-levels">
+					<p>Cost & effort level:</p>
+					<div class="choices">
+						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
+						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
+						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+					</div>
+				</div>
+
+				<div id="colours-low" class="container building-block__tip">
+					<h3>Lower cost & effort</h3>
+					<p>
+						Choose black & white as primary and accent colours in your theme’s settings.
+					</p>
+					<p>
+						Greyscale is always elegant, while still giving you the opportunity to personalise your journal by highlighting other visual elements – such as article figures and issue cover images – through high-quality photographs and illustrations.
+					</p>
+					<ul>
+						<li><a href="https://www.schemecolor.com/grayscale.php" target="_blank">An example grayscale colour scheme, with HEX, RGB, and CMYK values</a></li>
+					</ul>
+				</div>
+
+				<div id="colours-medium" class="container building-block__tip">
+					<h3>Medium cost & effort</h3>
+					<p>
+						Select a single hue from your inspiration, but only use monochromatic or adjacent hues.
+					</p>
+
+				</div>
+
+				<div id="colours-high" class="container building-block__tip">
+					<h3>Higher cost & effort</h3>
+					<p>
+						Use a palette generator to...
+					</p>
+					<ul>
+						<li>create a more complex selection based on an analogous, triadic or tetradic colour scheme.</li>
+						<li>extract colours from an illustration or a photograph.</li>
+					</ul>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Typographic choices -->
+		<section class="building-block">
+			<header class="building-block__header" onclick="showStep(typography);">
+				<h2>Typography</h2>
+			</header>
+
+			<section id="typography" class="building-block__body">
+				<div class="container building-block__intro arrow-down">
+					<p>
+						Typography.
+					</p>
+				</div>
+			</section>
+		</section>
+
+		<!-- Logo choices -->
+		<section class="building-block">
+			<header class="building-block__header" onclick="showStep(logo);">
+				<h2>Logo</h2>
+			</header>
+
+			<section id="logo" class="building-block__body">
+				<div class="container building-block__intro arrow-down">
+					<p>
+						Logo.
+					</p>
+				</div>
+			</section>
+		</section>
+
+		<!-- Visual choices -->
+		<section class="building-block">
+			<header class="building-block__header" onclick="showStep(visuals);">
+				<h2>Visuals</h2>
+			</header>
+
+			<section id="visuals" class="building-block__body">
+				<div class="container building-block__intro arrow-down">
+					<p>
+						Visuals.
+					</p>
+				</div>
+			</section>
+		</section>
+	</main>
+
+  <footer>
+    <div class="disclaimer">
+      <p>
+
+      </p>
+    </div>
+
+    <div class="copyright">
+
+    </div>
+  </footer>
+</body>
+</html>
