@@ -124,7 +124,8 @@
 
 				<div id="colours-high" class="container building-block__tip">
 					<h3>Higher cost & effort</h3>
-					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour) in your journal’s website, you will have to write your own CSS. Secondary colours can also be used to colourise images.</p>
+					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour) in your journal’s website, you will have to write your own CSS.</p>
+					<p>Secondary colours can also be used to edit your journal’s images to harmonise them with your site (e.g. by colourising them).</p>
 					<p>Stick to a maximum of 3 different hues.</p>
 					<p>
 						Use a palette generator to...
@@ -168,8 +169,8 @@
 					<p>Do you want to write your own CSS in order to use other fonts?</p>
 					<div class="choices">
 						<div class="choice" onclick="showStep(typographyLow)">No</div>
-						<div class="choice" onclick="showStep(typographyMedium)">Yes, but I have very little time.</div>
-						<div class="choice" onclick="showStep(typographyHigh)">Yes, and I want to take the time to explore other options.</div>
+						<div class="choice" onclick="showStep(typographyMedium)">Yes, but I have very little time</div>
+						<div class="choice" onclick="showStep(typographyHigh)">Yes, and I want to take the time to explore other options</div>
 					</div>
 				</div>
 
@@ -232,18 +233,64 @@
 
 			<section id="logo" class="building-block__body">
 				<div class="container building-block__intro arrow-down">
-					<p>
-						Logo.
-					</p>
+					<p>A logo is usually either&hellip;</p>
+					<ol>
+						<li>a logomark: it contains an icon</li>
+						<li>a logotype (or wordmark): a stylised version of the journal’s name or abbreviation</li>
+					</ol>
+					<p>Journals usually have the latter. If you do want a logomark to stand out a little more, you can still create your own using free and open source assets.</p>
+					<p>In some cases, journals require an image file (in SVG, PNG formats) to use on other platforms, such as social media profile photos and PDF articles and reports.</p>
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Choose the level effort you want to put into this.</p>
+					<p>Do you want to create a logo of your journal title and/or abbreviation to be used on other platforms?</p>
 					<div class="choices">
-						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
-						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
-						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+						<div class="choice" onclick="showStep(logoLow)">I don’t care / don’t need one</div>
+						<div class="choice" onclick="showStep(logoMedium)">Yes, and I want a logotype</div>
+						<div class="choice" onclick="showStep(logoHigh)">Yes, and I want a logomark </div>
 					</div>
+				</div>
+
+				<div id="logo-low" class="container building-block__tip">
+					<h3>Lower cost & effort</h3>
+					<p>If you don’t need a logo in image format, using plain text to display your journal title is always the simplest option.</p>
+					<p>You can always let the theme handle the title display and focus on personalising your colour palette & visuals (cover images, homepage image).</p>
+					<p>Bonus: displaying your journal title and abbreviation in plain text can help improve your website’s accessibility & SEO!</p>
+				</div>
+
+				<div id="logo-medium" class="container building-block__tip">
+					<h3>Medium cost & effort</h3>
+					<p>You will need a graphic editor that can export images in PNG and SVG. I use <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> for UI design but it can also be used to design a simple logotype. It’s a powerful design app, and free for up to three projects.</p>
+					<p>If you took the time to select a <strong>display typeface</strong> in the previous step, this would be one of its uses.</p>
+					<ul>
+						<li>Avoid displaying long journal titles. Use a logotype <em>only</em> if your journal has a short title or an abbreviation.</li>
+						<li>Do create a black version and a white version with transparent backgrounds, so that they may be used on different-coloured backgrounds.</li>
+						<li>Make sure to export your logotypes in both SVG and in PNG. Save these files somewhere safe.</li>
+					</ul>
+					<p>Warning: do NOT take a screen capture of text to use as a logo. It will not be reusable or accessible.</p>
+				</div>
+
+				<div id="logo-high" class="container building-block__tip">
+					<h3>Higher cost & effort</h3>
+					<p>A few online apps generate clean PNG and/or SVG logos on the fly, without the need for a graphic editor. Careful: most require you to create an account and are not free.</p>
+					<ul>
+						<li><a href="https://hatchful.shopify.com" target="_blank" rel="noreferrer">Hatchful</a>, Shopify’s free logomaker</li>
+						<li><a href="https://brandmark.io/" target="_blank" rel="noreferrer">Brandmark</a>, another generator (NOT free)</li>
+						<li><a href="https://logo.shapefactory.co/" target="_blank" rel="noreferrer">ShapeFactory</a>’s logo maker (NOT free)</li>
+					</ul>
+					<p>If you do use any of these services, make sure to have the SVG and PNG versions.</p>
+					<p>Warning: do NOT take a screen capture of text to use as a logo. It will not be high-quality, nor reusable or accessible.</p>
+
+					<p>If none of these options are interesting, you can always create your own using a graphic editor.</p>
+					<p>I use <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> for UI design but it can also be used to design a simple logotype. It’s a powerful design app, and free for up to three projects.</p>
+					<ol>
+						<li>Find a royalty-free SVG icon on <a href="https://thenounproject.com/" target="_blank" rel="noreferrer">The Noun Project</a></li>
+						<li>Open it in Figma</li>
+						<li>Using your selected typeface, play around with the editor to create a simple black logo (on a transparent background)</li>
+						<li>Make a white (on transparent background) version</li>
+						<li>Export the logomarks in SVG and PNG.</li>
+						<li>You should have four files in total to be used on your site and any other platforms and documents</li>
+					</ol>
 				</div>
 			</section>
 		</section>
@@ -264,10 +311,25 @@
 				<div class="container building-block__cost-levels">
 					<p>Choose the level effort you want to put into this.</p>
 					<div class="choices">
-						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
-						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
-						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+						<div class="choice" onclick="showStep(visualsLow)">Lower</div>
+						<div class="choice" onclick="showStep(visualsMedium)">Medium</div>
+						<div class="choice" onclick="showStep(visualsHigh)">Higher</div>
 					</div>
+				</div>
+
+				<div id="visuals-low" class="container building-block__tip">
+					<h3>Lower cost & effort</h3>
+					<p></p>
+				</div>
+
+				<div id="visuals-medium" class="container building-block__tip">
+					<h3>Medium cost & effort</h3>
+					<p></p>
+				</div>
+
+				<div id="visuals-high" class="container building-block__tip">
+					<h3>Higher cost & effort</h3>
+					<p></p>
 				</div>
 			</section>
 		</section>
