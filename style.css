@@ -34,9 +34,8 @@ ul {
 }
 
 ul ul {
-	margin: 0 0 0.75em 0;
+	margin: 0 0 1em 0;
 }
-
 li:before {
 	content: '⟶ ';
 }
@@ -46,8 +45,7 @@ li li:before {
 	margin-left: 0.75em;
 }
 
-p:last-child,
-ul:last-child {
+p:last-child {
 	margin-bottom: 0;
 }
 
@@ -86,6 +84,7 @@ input {
 .main-header {
 	padding: 3em 0;
 	background-color: #FFF;
+	border-bottom: 1px dotted;
 }
 
 .building-block {
@@ -150,20 +149,21 @@ input {
 }
 
 .choices {
-	display: flex;
+	/* display: flex; */
 }
 
 .choice {
+	display: block;
 	cursor: pointer;
 	font-size: 16px;
 	padding: 0.5em;
-	margin-right: 0.75em;
+	margin-bottom: 0.75em;
 	border: 1px solid;
 }
 
 .choice.clicked {
 	background: #000;
-	color: #000;
+	color: #FFF;
 }
 
 .choice:last-child {
@@ -177,8 +177,6 @@ input {
 .hide {
 	display: none;
 }
-
-
 
 /* Arrows */
 .arrow-left:before,

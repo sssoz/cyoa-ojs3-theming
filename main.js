@@ -5,6 +5,9 @@ var intro         	= document.getElementById('intro'),
 		coloursHigh			= document.getElementById('colours-high'),
 
 		typography			= document.getElementById('typography'),
+		typographyLow			= document.getElementById('typography-low'),
+		typographyMedium		= document.getElementById('typography-medium'),
+		typographyHigh			= document.getElementById('typography-high'),
 
 		logo						= document.getElementById('logo'),
 

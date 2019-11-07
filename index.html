@@ -37,7 +37,8 @@
 
 			<section id="colours" class="building-block__body">
 				<div class="container building-block__intro arrow-down">
-					<p>Find inspiration through mood boarding, collecting images, appreciating other sites’ design, your own tastes.</p>
+					<p>Create a simple & cohesive colour palette.</p>
+					<p>Find colour inspiration through mood boarding, appreciating other sites’ design, your own tastes.</p>
 					<ul>
 						<li>
 							From UI and graphic design sites
@@ -59,7 +60,7 @@
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Choose the level of cost & effort you want to put into this.</p>
+					<p>Choose the level effort you want to put into this.</p>
 					<div class="choices">
 						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
 						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
@@ -123,7 +124,7 @@
 
 				<div id="colours-high" class="container building-block__tip">
 					<h3>Higher cost & effort</h3>
-					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour), you will have to write your own CSS.</p>
+					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour) in your journal’s website, you will have to write your own CSS. Secondary colours can also be used to colourise images.</p>
 					<p>Stick to a maximum of 3 different hues.</p>
 					<p>
 						Use a palette generator to...
@@ -159,18 +160,67 @@
 			<section id="typography" class="building-block__body">
 				<div class="container building-block__intro arrow-down">
 					<p>
-						Typography.
+						Typeface choices are built-in all OJS 3 themes and have been selected with web legibility and professionalism in mind. The options will continue to improve as we research into more high-quality, free, and open source typefaces.
 					</p>
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Choose the level of cost & effort you want to put into this.</p>
+					<p>Do you want to write your own CSS in order to use other fonts?</p>
 					<div class="choices">
-						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
-						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
-						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+						<div class="choice" onclick="showStep(typographyLow)">No</div>
+						<div class="choice" onclick="showStep(typographyMedium)">Yes, but I have very little time.</div>
+						<div class="choice" onclick="showStep(typographyHigh)">Yes, and I want to take the time to explore other options.</div>
 					</div>
 				</div>
+
+				<div id="typography-low" class="container building-block__tip">
+					<h3>Lower cost & effort</h3>
+					<p>Don’t do anything: let your selected theme handle text display and typeface pairings.</p>
+					<p>Themes come with either a selection of typeface pairings (Default) or a built-in typeface which are already optimised for their use in both heading and body text.</p>
+				</div>
+
+				<div id="typography-medium" class="container building-block__tip">
+					<h3>Medium cost & effort</h3>
+					<p>Select your own typeface(s) for use in body text, headings, or display text (i.e. logos). Careful: a <em>display</em> typeface is not designed to be used in body text; it will not be legible.</p>
+					<ul>
+						<li>Stick to only ONE typeface, but make sure that it includes at least italics & a bolder weight.
+							<ul>
+								<li><a href="https://open-foundry.com/fonts" target="_blank">Open Foundry</a>: a selection and showcase of high-quality & free typefaces</li>
+								<li><a href="http://freefaces.gallery/" target="_blank">Free Faces</a></li>
+								<li><a href="http://uplaod.fr/allfonts/" target="_blank">Uplaod</a>, a creative studio that provides free fonts (nicer for logos)</li>
+								<li><a href="https://www.velvetyne.fr/" target="_blank">Velvetyne</a>, a libre & open source type foundry (also mostly quirky display fonts)</li>
+								<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> (WARNING: not all are good quality)</li>
+							</ul>
+						</li>
+						<li>Find a <a href="https://en.wikipedia.org/wiki/Font_superfamily" target="_blank">typeface superfamily</a>: a pairing of serif and sans-serif fonts that were designed together.
+							<ul>
+								<li><a href="https://fonts.google.com/featured/Superfamilies" target="_blank">Google Fonts’ superfamilies</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div id="typography-high" class="container building-block__tip">
+					<h3>Higher cost & effort</h3>
+					<p>The most advanced and costly option is to pair two typefaces based on certain properties, such as <a href="https://en.wikipedia.org/wiki/X-height" target="_blank">x-height<a/>, <a href="https://www.creativebloq.com/features/5-traits-that-define-a-typefaces-personality" target="_blank">personality</a>, history, type designer&hellip;</p>
+					<p>However, many designers and typography experts regularly compile recommended font pairings. You may find inspiration there:</p>
+					<ul>
+						<li><a href="https://www.typewolf.com/" target="_blank">Typewolf</a>: pairings found on other websites (with a nicer sense of design)</li>
+						<li><a href="http://typ.io/" target="_blank">Typ.io</a>: pairings found on websites</li>
+						<li><a href="https://fontjoy.com/" target="_blank">Fontjoy</a>: Google Fonts pairings generated by deep learning (based on x-height)</li>
+						<li><a href="https://fontpair.co/" target="_blank">FontPair</a>: more Google Fonts pairing suggestions</li>
+					</ul>
+					<p>If none of these pairing suggestions appeal to you, then you may try to create your own pairing.
+					<p>This option involves a lot more time, research, and testing to make sure the selected fonts can display your content.</p>
+					<ul>
+						<li><a href="https://open-foundry.com/fonts" target="_blank">Open Foundry</a>: a selection and showcase of high-quality & free typefaces</li>
+						<li><a href="http://freefaces.gallery/" target="_blank">Free Faces</a></li>
+						<li><a href="http://uplaod.fr/allfonts/" target="_blank">Uplaod</a>, a creative studio that provides free fonts (nicer for logos)</li>
+						<li><a href="https://www.velvetyne.fr/" target="_blank">Velvetyne</a>, a libre & open source type foundry (also mostly quirky display fonts)</li>
+						<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> (WARNING: not all are good quality)</li>
+					</ul>
+				</div>
+
 			</section>
 		</section>
 
@@ -188,7 +238,7 @@
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Choose the level of cost & effort you want to put into this.</p>
+					<p>Choose the level effort you want to put into this.</p>
 					<div class="choices">
 						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
 						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
@@ -212,7 +262,7 @@
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Choose the level of cost & effort you want to put into this.</p>
+					<p>Choose the level effort you want to put into this.</p>
 					<div class="choices">
 						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
 						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
