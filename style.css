@@ -181,6 +181,10 @@ input {
 	display: none;
 }
 
+.choices {
+	position: relative;
+}
+
 .choice {
 	display: block;
 	cursor: pointer;
