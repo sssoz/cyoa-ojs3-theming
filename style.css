@@ -182,6 +182,7 @@ input {
 .choice.clicked {
 	background: #000;
 	color: #FFF;
+	border-color: #000;
 }
 
 .choice:last-child {
