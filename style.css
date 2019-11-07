@@ -10,8 +10,8 @@ body {
   line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #202020;
-  color: #FEFEFE;
+	background-color: #666565;
+  color: #000;
 }
 
 h1, h2, h3 {
@@ -64,7 +64,7 @@ section {
 
 input {
 	padding: 0.5em;
-	color: #FEFEFE;
+	color: #000;
 	font-family: 'Rubik', sans-serif;
 	font-size: 16px;
 	border: 1px solid;
@@ -85,7 +85,7 @@ input {
 
 .main-header {
 	padding: 3em 0;
-	background-color: #000;
+	background-color: #FFF;
 }
 
 .building-block {
@@ -95,19 +95,19 @@ input {
 }
 
 .building-block:nth-child(1) {
-	background-color: #090909;
+	background-color: #FFF;
 }
 
 .building-block:nth-child(2) {
-	background-color: #131313;
+	background-color: #EEE;
 }
 
 .building-block:nth-child(3) {
-	background-color: #1A1A1A;
+	background-color: #C0C0C0;
 }
 
 .building-block:nth-child(4) {
-	background-color: #202020;
+	background-color: #959595;
 }
 
 .building-block__header {
@@ -162,7 +162,7 @@ input {
 }
 
 .choice.clicked {
-	background: #FEFEFE;
+	background: #000;
 	color: #000;
 }
 
@@ -187,7 +187,7 @@ input {
 .arrow-down:before {
   content: " ";
   position: absolute;
-  background-color: #FEFEFE;
+  background-color: #000;
 }
 
 .arrow-left:after,
@@ -214,7 +214,7 @@ input {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 8px solid #FEFEFE;
+  border-right: 8px solid #000;
 }
 
 .arrow-right:before {
@@ -233,7 +233,7 @@ input {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid #FEFEFE;
+  border-left: 8px solid #000;
 }
 
 .arrow-up:before {
@@ -252,7 +252,7 @@ input {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #FEFEFE;
+  border-bottom: 8px solid #000;
 }
 
 .arrow-down:before {
@@ -271,5 +271,5 @@ input {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #FEFEFE;
+  border-top: 8px solid #000;
 }
