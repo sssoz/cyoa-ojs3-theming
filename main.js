@@ -37,5 +37,4 @@ function showStep(step) {
 		container.scrollIntoView({behavior: "smooth"});
 	}
 
-
 }

@@ -42,7 +42,8 @@ li:before {
 }
 
 li li:before {
-	content: '🡒 ';
+	content: ' ';
+	margin-left: 0.75em;
 }
 
 p:last-child,
@@ -59,6 +60,15 @@ section {
   width: auto;
   padding: 0 0.75em 0.75em 0.75em;
   margin: 0 auto;
+}
+
+input {
+	padding: 0.5em;
+	color: #FEFEFE;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	border: 1px solid;
+	background: transparent;
 }
 
 .container {
@@ -112,7 +122,6 @@ section {
 }
 
 .building-block__cost-levels {
-	width: fit-content;
 }
 
 .building-block__intro,
@@ -146,7 +155,7 @@ section {
 
 .choice {
 	cursor: pointer;
-	font-size: smaller;
+	font-size: 16px;
 	padding: 0.5em;
 	margin-right: 0.75em;
 	border: 1px solid;

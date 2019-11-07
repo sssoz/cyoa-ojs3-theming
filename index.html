@@ -40,14 +40,14 @@
 					<p>Find inspiration through mood boarding, collecting images, appreciating other sites’ design, your own tastes.</p>
 					<ul>
 						<li>
-							From UI and graphic design sites —
+							From UI and graphic design sites
 							<ul>
 								<li><a href="https://eyeondesign.aiga.org/" target="_blank">AIGA Eye on Design</a></li>
 								<li><a href="https://dribbble.com/colors/ " target="_blank">Dribbble’s search by colour</a></li>
 							</ul>
 						</li>
 						<li>
-							Various art blogs —
+							Various art blogs
 							<ul>
 								<li><a href="https://butdoesitfloat.com/" target="_blank">But does it float?</a></li>
 								<li><a href="https://www.itsnicethat.com/" target="_blank">It’s Nice That</a></li>
@@ -55,10 +55,11 @@
 						</li>
 						<li>Anywhere: (scholarly or non-scholarly) websites, library archives, art books, architecture, Instagram, Pinterest&hellip;</li>
 					</ul>
+					<p>Save those images in an inspiration folder or copy them into a moodboard and bookmark interesting websites to guide you in your next design decisions.</p>
 				</div>
 
 				<div class="container building-block__cost-levels">
-					<p>Cost & effort level:</p>
+					<p>Choose the level of cost & effort you want to put into this.</p>
 					<div class="choices">
 						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
 						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
@@ -74,6 +75,9 @@
 					<p>
 						Greyscale is always elegant, while still giving you the opportunity to personalise your journal by highlighting other visual elements – such as article figures and issue cover images – through high-quality photographs and illustrations.
 					</p>
+					<p>
+						OJS 3’s newest themes have been optimised to be accessible (meeting WCAG’s requirements for text-on-background colour contrast) and aesthetically-pleasing when greyscale as primary colours.
+					</p>
 					<ul>
 						<li><a href="https://www.schemecolor.com/grayscale.php" target="_blank">An example grayscale colour scheme, with HEX, RGB, and CMYK values</a></li>
 					</ul>
@@ -82,19 +86,65 @@
 				<div id="colours-medium" class="container building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p>
-						Select a single hue from your inspiration, but only use monochromatic or adjacent hues.
+						Select a single hue as your primary colour.
 					</p>
-
+					<p>
+						Most of OJS 3’s themes only allow a single primary colour which is automatically applied to accentuate certain page elements and call-to-actions. In certain cases, the theme will also handle variations of your selected primary colour by calculating lighter tints or darker shades to use on different page elements.
+					</p>
+					<ul>
+						<li>
+							Culled from your inspirations (images or bookmarked websites).
+							<ul>
+								<li><a href="http://colormind.io/image/" target="_blank">Colormind.io’s image colour extractor</a></li>
+								<li><a href="https://chrome.google.com/webstore/detail/site-palette/pekhihjiehdafocefoimckjpbkegknoh" target="_blank">Chrome extension for colour picking a website’s palette</a></li>
+								<li><a href="https://addons.mozilla.org/en-GB/firefox/addon/colorzilla/" target="_blank">Firefox extension for colour picking a website’s palette</a></li>
+							</ul>
+						</li>
+						<li>Randomly generated:
+							<ul>
+								<li><a href="https://www.webfx.com/web-design/random-color-picker/" target="_blank">Random colour picker</a></li>
+								<li><a href="https://coolors.co/app" target="_blank">Coolors.co</a></li>
+							</ul>
+						</li>
+						<li>Based on its symbolism (taken from <a href="https://www.canva.com/learn/color-meanings-symbolism/" target="_blank">this article</a>):
+							<ul>
+								<li>Red: energy, power, passion</li>
+								<li>Orange: joy, enthusiasm, creativity</li>
+								<li>Yellow: happiness, intellect, energy</li>
+								<li>Green: ambition, growth, freshness, safety</li>
+								<li>Blue: tranquility, confidence, intelligence</li>
+								<li>Purple: luxury, ambition, creativity</li>
+								<li>Black: power, elegance, mystery</li>
+								<li>White: cleanliness, purity, perfection</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 
 				<div id="colours-high" class="container building-block__tip">
 					<h3>Higher cost & effort</h3>
+					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour), you will have to write your own CSS.</p>
+					<p>Stick to a maximum of 3 different hues.</p>
 					<p>
 						Use a palette generator to...
 					</p>
 					<ul>
-						<li>create a more complex selection based on an analogous, triadic or tetradic colour scheme.</li>
-						<li>extract colours from an illustration or a photograph.</li>
+						<li>find a random colour selection.
+							<ul>
+								<li><a href="https://colorsupplyyy.com/random-color-generator" target="_blank">Colorsupplyyy’s random colour generator</a></li>
+								<li><a href="http://fabianburghardt.de/swisscolors/" target="_blank">Swiss Style colour picker</a></li>
+							</ul>
+						</li>
+						<li>extract multiple colours from an illustration or a photograph.
+							<ul>
+								<li><a href="http://colormind.io/image/" target="_blank">Colormind.io’s colour extractor</a></li>
+							</ul>
+						</li>
+						<li>create your own selection based on an adjacent, analogous, triadic or tetradic colour scheme.
+							<ul>
+								<li><a href="https://paletton.com/" target="_blank">Paletton’s colour scheme designer</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -113,6 +163,15 @@
 						Typography.
 					</p>
 				</div>
+
+				<div class="container building-block__cost-levels">
+					<p>Choose the level of cost & effort you want to put into this.</p>
+					<div class="choices">
+						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
+						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
+						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+					</div>
+				</div>
 			</section>
 		</section>
 
@@ -128,6 +187,15 @@
 						Logo.
 					</p>
 				</div>
+
+				<div class="container building-block__cost-levels">
+					<p>Choose the level of cost & effort you want to put into this.</p>
+					<div class="choices">
+						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
+						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
+						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+					</div>
+				</div>
 			</section>
 		</section>
 
@@ -142,6 +210,15 @@
 					<p>
 						Visuals.
 					</p>
+				</div>
+
+				<div class="container building-block__cost-levels">
+					<p>Choose the level of cost & effort you want to put into this.</p>
+					<div class="choices">
+						<div class="choice" onclick="showStep(coloursLow)">Lower</div>
+						<div class="choice" onclick="showStep(coloursMedium)">Medium</div>
+						<div class="choice" onclick="showStep(coloursHigh)">Higher</div>
+					</div>
 				</div>
 			</section>
 		</section>
