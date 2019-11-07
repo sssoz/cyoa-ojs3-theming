@@ -1,23 +1,27 @@
-var intro      			   	= document.getElementById('intro'),
-		colours							= document.getElementById('colours'),
-		coloursLow					= document.getElementById('colours-low'),
-		coloursMedium				= document.getElementById('colours-medium'),
-		coloursHigh					= document.getElementById('colours-high'),
+var intro      			  	 	= document.getElementById('intro'),
+		colours								= document.getElementById('colours'),
+		coloursLow						= document.getElementById('colours-low'),
+		coloursMedium					= document.getElementById('colours-medium'),
+		coloursHigh						= document.getElementById('colours-high'),
 
-		typography					= document.getElementById('typography'),
-		typographyLow				= document.getElementById('typography-low'),
-		typographyMedium		= document.getElementById('typography-medium'),
-		typographyHigh			= document.getElementById('typography-high'),
+		typography						= document.getElementById('typography'),
+		typographyLow					= document.getElementById('typography-low'),
+		typographyMedium			= document.getElementById('typography-medium'),
+		typographyMediumMore	= document.getElementById('typography-medium-more'),
+		typographyHigh				= document.getElementById('typography-high'),
+		typographyHighMore		= document.getElementById('typography-high-more'),
 
-		logo								= document.getElementById('logo'),
-		logoLow							= document.getElementById('logo-low'),
-		logoMedium					= document.getElementById('logo-medium'),
-		logoHigh						= document.getElementById('logo-high'),
+		logo									= document.getElementById('logo'),
+		logoLow								= document.getElementById('logo-low'),
+		logoMedium						= document.getElementById('logo-medium'),
+		logoMediumMore				= document.getElementById('logo-medium-more'),
+		logoHigh							= document.getElementById('logo-high'),
+		logoHighMore					= document.getElementById('logo-high-more'),
 
-		visuals							= document.getElementById('visuals'),
-		visualsLow					= document.getElementById('visuals-low'),
-		visualsMedium				= document.getElementById('visuals-medium'),
-		visualsHigh					= document.getElementById('visuals-high');
+		visuals								= document.getElementById('visuals'),
+		visualsLow						= document.getElementById('visuals-low'),
+		visualsMedium					= document.getElementById('visuals-medium'),
+		visualsHigh						= document.getElementById('visuals-high');
 
 function showStep(step) {
 	var clickedElement = event.target;
