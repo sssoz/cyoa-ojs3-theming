@@ -21,7 +21,7 @@ var intro      			  	 	= document.getElementById('intro'),
 		visuals								= document.getElementById('visuals'),
 		visualsLow						= document.getElementById('visuals-low'),
 		visualsMedium					= document.getElementById('visuals-medium'),
-		visualsHigh						= document.getElementById('visuals-high');
+		visualsMediumMore			= document.getElementById('visuals-medium-more');
 
 function showStep(step) {
 	var clickedElement = event.target;
@@ -31,7 +31,7 @@ function showStep(step) {
 	clickedElement.classList.toggle("clicked");
 
 	if (clickedElement.classList.contains("choice")) {
-		var parent = clickedElement.closest(".building-block__cost-levels"),
+		var parent = clickedElement.closest(".building-block__cost-levels, .choices"),
 				siblings = clickedElement.parentNode.children;
 
 		// Display down arrow

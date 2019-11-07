@@ -255,7 +255,7 @@
 				<div class="container building-block__cost-levels">
 					<p>Do you want to create a logo of your journal title and/or abbreviation to be used on other platforms?</p>
 					<div class="choices">
-						<button class="choice" onclick="showStep(logoLow)">I don’t care&nbsp;/ don’t need one now</button>
+						<button class="choice" onclick="showStep(logoLow)">I don’t need one now</button>
 						<button class="choice" onclick="showStep(logoMedium)">Yes, and I want a logotype</button>
 						<button class="choice" onclick="showStep(logoHigh)">Yes, and I want a logomark </button>
 					</div>
@@ -329,8 +329,8 @@
 
 			<section id="visuals" class="building-block__body">
 				<div class="container building-block__intro arrow-down">
-					<p>
-						Visuals.
+					<p>Visuals can include both illustrations and photographs.</p>
+					<p>In OJS 3, besides the logo, you can upload visuals as homepage image (Default, Health Sciences) or a header image (Clasic, Immersion), as well as article images. Some themes (Immersion) also allow you to upload an image for an issue section.
 					</p>
 				</div>
 
@@ -339,7 +339,6 @@
 					<div class="choices">
 						<button class="choice" onclick="showStep(visualsLow)">Lower</button>
 						<button class="choice" onclick="showStep(visualsMedium)">Medium</button>
-						<button class="choice" onclick="showStep(visualsHigh)">Higher</button>
 					</div>
 				</div>
 
@@ -351,27 +350,47 @@
 
 				<div id="visuals-medium" class="container building-block__tip">
 					<h3>Medium cost & effort</h3>
-					<p></p>
-				</div>
+					<p>Find royalty-free photographs and illustrations: always in high-resolution PNG or SVG, without watermarks.</p>
+					<ul>
+						<li>Collect public domain images:
+							<ul>
+								<li>Public domain image banks:
+									<a href="https://publicdomainreview.org" target="_blank" rel="noreferrer">The Public Domain Review</a>,
+									<a href="https://commons.wikimedia.org" target="_blank" rel="noreferrer">Wikimedia Commons</a>
+								</li>
+								<li>Local and national public library archives:
+								<a href="https://www.flickr.com/photos/britishlibrary" target="_blank" rel="noreferrer">British Library</a>,
+								<a href="https://www.nypl.org/" target="_blank" rel="noreferrer">NY Public Library</a>
+							</ul>
+						</li>
+						<li>Download royalty-free images:
+						<ul>
+							<li>Illustrations: <a href="https://undraw.co/" target="_blank" rel="noreferrer">Undraw</a></li>
+							<li>Photographs: <a href="https://unsplash.com/ " target="_blank" rel="noreferrer">Unsplash</a></li>
+						</ul>
+						</li>
+						<li>Create your own abstract patterns:
+						<ul>
+							<li>Blobs: <a href="https://www.blobmaker.app/" target="_blank" rel="noreferrer">Blobmaker</a></li>
+							<li>Triangles: <a href="https://trianglify.io/" target="_blank" rel="noreferrer">Trianglify</a></li>
+							<li>Gradients: <a href="https://gradient.shapefactory.co/" target="_blank" rel="noreferrer">ShapeFactory’s Gradient maker</a></li>
+							<li>More patterns: <a href="https://www.heropatterns.com/" target="_blank" rel="noreferrer">Hero Patterns</a></li>
+						</ul>
+						</li>
+					</ul>
 
-				<div id="visuals-high" class="container building-block__tip">
-					<h3>Higher cost & effort</h3>
-					<p></p>
+					<div class="choices" onClick="showStep(visualsMediumMore);">
+						<button class="choice">I want to further customise my images</button>
+					</div>
+
+					<div id="visuals-medium-more" class="building-block__tip">
+						<p>You could harmonise your images to match your site by editing them.</p>
+						<p><a href="https://duotone.shapefactory.co/" target="_blank" rel="noreferrer">ShapeFactory’s duotone app</a> lets you easily search images from Unsplash and colorise them with two of your selected hues.</p>
+						<p>Using a graphic editor, you can also filter and colorise your images using your own colour palette.</p>
+					</div>
 				</div>
 			</section>
 		</section>
 	</main>
-
-  <footer>
-    <div class="disclaimer">
-      <p>
-
-      </p>
-    </div>
-
-    <div class="copyright">
-
-    </div>
-  </footer>
 </body>
 </html>
