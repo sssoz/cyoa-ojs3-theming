@@ -1,3 +1,4 @@
+/* General */
 * , *:before, *:after {
   box-sizing: border-box;
 		margin: 0;
@@ -27,15 +28,33 @@ p {
   margin: 0 0 1em 0;
 }
 
-ul {
+p:last-child {
+	margin-bottom: 0;
+}
+
+/* Lists*/
+ol {
+	counte-reset: ordered-list;
+}
+
+ul, ol {
 	list-style: none;
 	padding: 0;
 	margin: 0.75em 0;
 }
 
-ul ul {
+ul ul, ol ol {
 	margin: 0 0 1em 0;
 }
+
+ol li {
+	counter-increment: ordered-list;
+}
+
+ol li:before {
+	content: "("counter(ordered-list)") ";
+}
+
 li:before {
 	content: '⟶ ';
 }
@@ -45,10 +64,7 @@ li li:before {
 	margin-left: 0.75em;
 }
 
-p:last-child {
-	margin-bottom: 0;
-}
-
+/* Layout */
 main {
 	width: 100%;
 	margin: 0;
@@ -60,6 +76,13 @@ section {
   margin: 0 auto;
 }
 
+.container {
+	margin: auto;
+	padding: 1em;
+}
+
+/* Forms */
+
 input {
 	padding: 0.5em;
 	color: #000;
@@ -67,11 +90,6 @@ input {
 	font-size: 16px;
 	border: 1px solid;
 	background: transparent;
-}
-
-.container {
-	margin: auto;
-	padding: 1em;
 }
 
 
@@ -90,7 +108,7 @@ input {
 .building-block {
   display: block;
   text-align: center;
-	padding: 0 auto 1em auto;
+	padding: 0;
 }
 
 .building-block:nth-child(1) {
@@ -110,7 +128,7 @@ input {
 }
 
 .building-block__header {
-	padding: 2vh 0;
+	padding: 1em 0;
 	background-color: inherit;
 	cursor: pointer;
 }
