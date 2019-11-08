@@ -80,7 +80,7 @@ li li:before {
 main {
 	width: 100%;
 	margin: 0;
-	counter-reset: building-blocks;
+	counter-reset: building-blocks -1;
 }
 
 section {
