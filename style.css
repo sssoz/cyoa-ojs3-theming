@@ -97,6 +97,10 @@ section {
   margin: 1em auto;
 }
 
+footer {
+	font-size: 0.75em;
+}
+
 .container {
 	margin: auto;
 	padding: 1em;
@@ -110,10 +114,17 @@ section {
 }
 
 .main-header {
-	padding: 3em 1em;
+	padding: 2em 1em;
 	border-bottom: 1px dotted;
 }
 
+.main-header__logo {
+	max-width: 10%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+/* Building block sections */
 .building-block {
   display: block;
 	padding-top: 0;
