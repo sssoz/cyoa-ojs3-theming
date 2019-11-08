@@ -12,7 +12,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #666565;
-  color: #000;
+  color: #22211F;
 }
 
 h1, h2, h3 {
@@ -45,7 +45,7 @@ p:last-child {
 }
 
 hr {
-	border-top: 1px dotted #000;
+	border-top: 1px dotted #22211F;
 	margin-bottom: 1em;
 }
 
@@ -107,7 +107,7 @@ section {
 /* Forms */
 input {
 	padding: 0.5em;
-	color: #000;
+	color: #22211F;
 	font-family: 'Rubik', sans-serif;
 	font-size: 16px;
 	border: 1px solid;
@@ -153,9 +153,6 @@ input {
 	min-height: 70vh;
 }
 
-.building-block__cost-levels {
-}
-
 .building-block__intro,
 .building-block__cost-levels,
 .building-block__tip {
@@ -198,9 +195,9 @@ input {
 }
 
 .choice.clicked {
-	background: #000;
+	background: #22211F;
 	color: #FFF;
-	border-color: #000;
+	border-color: #22211F;
 }
 
 .choice:last-child {
@@ -222,7 +219,7 @@ input {
 .arrow-down:before {
   content: " ";
   position: absolute;
-  background-color: #000;
+  background-color: #22211F;
 }
 
 .arrow-left:after,
@@ -249,7 +246,7 @@ input {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 8px solid #000;
+  border-right: 8px solid #22211F;
 }
 
 .arrow-right:before {
@@ -268,7 +265,7 @@ input {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid #000;
+  border-left: 8px solid #22211F;
 }
 
 .arrow-up:before {
@@ -287,7 +284,7 @@ input {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #000;
+  border-bottom: 8px solid #22211F;
 }
 
 .arrow-down:before {
@@ -306,5 +303,5 @@ input {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #000;
+  border-top: 8px solid #22211F;
 }
