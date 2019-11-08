@@ -11,7 +11,7 @@ body {
   line-height: 1.35;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  color: #22211F;
+  color: #1A202C;
 }
 
 h1, h2, h3 {
@@ -40,13 +40,13 @@ p {
 }
 
 hr {
-	border-top: 1px dotted #22211F;
+	border-top: 1px dotted #1A202C;
 	margin-bottom: 1em;
 }
 
 /* Lists*/
 ol {
-	counte-reset: ordered-list;
+	counter-reset: ordered-list;
 }
 
 ul, ol {
@@ -80,6 +80,7 @@ li li:before {
 main {
 	width: 100%;
 	margin: 0;
+	counter-reset: building-blocks;
 }
 
 section {
@@ -109,6 +110,7 @@ section {
 	padding-top: 0;
 	padding-bottom: 0;
 	border-bottom: 1px dotted;
+	counter-increment: building-blocks;
 }
 
 .building-block:last-child {
@@ -119,6 +121,10 @@ section {
 	padding: 1em 0;
 	background-color: inherit;
 	cursor: pointer;
+}
+
+.building-block__header h2:before {
+	content: "0"counter(building-blocks)" " ;
 }
 
 .building-block__body {
@@ -177,9 +183,9 @@ section {
 }
 
 .choice.clicked {
-	background: #22211F;
+	background: #1A202C;
 	color: #FFF;
-	border-color: #22211F;
+	border-color: #1A202C;
 }
 
 .open {
@@ -197,7 +203,7 @@ section {
 .arrow-down:before {
   content: " ";
   position: absolute;
-  background-color: #22211F;
+  background-color: #1A202C;
 }
 
 .arrow-left:after,
@@ -224,7 +230,7 @@ section {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 8px solid #22211F;
+  border-right: 8px solid #1A202C;
 }
 
 .arrow-right:before {
@@ -243,7 +249,7 @@ section {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid #22211F;
+  border-left: 8px solid #1A202C;
 }
 
 .arrow-up:before {
@@ -262,7 +268,7 @@ section {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #22211F;
+  border-bottom: 8px solid #1A202C;
 }
 
 .arrow-down:before {
@@ -281,5 +287,5 @@ section {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #22211F;
+  border-top: 8px solid #1A202C;
 }
