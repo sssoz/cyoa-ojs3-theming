@@ -3,6 +3,7 @@ var start      			  	 	= document.getElementById('start'),
 		coloursLow						= document.getElementById('colours-low'),
 		coloursMedium					= document.getElementById('colours-medium'),
 		coloursHigh						= document.getElementById('colours-high'),
+		coloursHighMore				= document.getElementById('colours-high-more'),
 
 		typography						= document.getElementById('typography'),
 		typographyLow					= document.getElementById('typography-low'),
