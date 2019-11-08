@@ -21,21 +21,19 @@
 	<p class="browserupgrade">You are using an outdated browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
-	<header class="main-header">
-		<div class="container">
-			<h1>What goes into an OJS 3 journal’s identity?</h1>
-			<p>If you don’t have a journal to work on, you may download this <a href="#" title="Download sample assets">compressed file</a> containing some sample assets (logos, images, colour palettes).</p>
-		</div>
+	<header class="container main-header">
+		<h1>What goes into an OJS 3 journal’s identity?</h1>
+		<p>If you don’t have a journal to work on, you may download this <a href="#" title="Download sample assets">compressed file</a> containing some sample assets (logos, images, colour palettes).</p>
 	</header>
 
 	<main>
 		<!-- Start here -->
-		<section class="building-block">
+		<section class="container building-block">
 			<header class="building-block__header" onclick="showStep(start);">
 				<h2>START HERE</h2>
 			</header>
 			<section id="start" class="building-block__body">
-				<div class="container building-block__intro arrow-down">
+				<div class="building-block__intro arrow-down">
 					<h3>Find inspiration</h3>
 					<p>Find design inspiration through mood boarding, appreciating other sites’ layouts, your own tastes.</p>
 					<ul>
@@ -61,19 +59,19 @@
 		</section>
 
 		<!-- Colour palette choices -->
-		<section class="building-block">
+		<section class="container building-block">
 			<header class="building-block__header" onclick="showStep(colours);">
 				<h2>Colour palette</h2>
 			</header>
 
 			<section id="colours" class="building-block__body">
-				<div class="container building-block__intro arrow-down">
+				<div class="building-block__intro arrow-down">
 					<p>Create a simple & cohesive colour palette.</p>
 					<p>Most OJS 3 themes have built-in settings that allow you to select one primary colour. Immersion is a lot more customisable and lets you select a different colour per section.</p>
 					<p>Using a polychromatic colour scheme requires more effort in terms of design research and CSS modifications.</p>
 				</div>
 
-				<div class="container building-block__cost-levels">
+				<div class="building-block__cost-levels">
 					<p>Choose the level effort you want to put into this.</p>
 					<div class="choices">
 						<button class="choice" onclick="showStep(coloursLow)">Lower</button>
@@ -82,7 +80,7 @@
 					</div>
 				</div>
 
-				<div id="colours-low" class="container building-block__tip">
+				<div id="colours-low" class="building-block__tip">
 					<h3>Lower cost & effort</h3>
 					<p>
 						Choose black & white as primary and accent colours in your theme’s settings.
@@ -98,7 +96,7 @@
 					</ul>
 				</div>
 
-				<div id="colours-medium" class="container building-block__tip">
+				<div id="colours-medium" class="building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p>
 						Select a single hue as your primary colour.
@@ -139,7 +137,7 @@
 					</ul>
 				</div>
 
-				<div id="colours-high" class="container building-block__tip">
+				<div id="colours-high" class="building-block__tip">
 					<h3>Higher cost & effort</h3>
 					<p>If you wish to use more than a single hue to complement your primary colour (secondary colour, accent colour) in your journal’s website, you will have to write your own CSS.</p>
 					<p>Secondary colours can also be used to edit your journal’s images to harmonise them with your site (e.g. by colourising them).</p>
@@ -170,20 +168,20 @@
 		</section>
 
 		<!-- Typographic choices -->
-		<section class="building-block">
+		<section class="container building-block">
 			<header class="building-block__header" onclick="showStep(typography);">
 				<h2>Typography</h2>
 			</header>
 
 			<section id="typography" class="building-block__body">
-				<div class="container building-block__intro arrow-down">
+				<div class="building-block__intro arrow-down">
 					<p>Select a nice and legible typeface that suits the journal’s tone.</p>
 					<p>
 						Typeface choices are built-in all OJS 3 themes and have been selected with web legibility and professionalism in mind. The options will continue to improve as we research into more high-quality, free, and open source typefaces.
 					</p>
 				</div>
 
-				<div class="container building-block__cost-levels">
+				<div class="building-block__cost-levels">
 					<p>Do you want to write your own CSS in order to use other fonts?</p>
 					<div class="choices">
 						<button class="choice" onclick="showStep(typographyLow)">No</button>
@@ -192,13 +190,13 @@
 					</div>
 				</div>
 
-				<div id="typography-low" class="container building-block__tip">
+				<div id="typography-low" class="building-block__tip">
 					<h3>Lower cost & effort</h3>
 					<p>Don’t do anything: let your selected theme handle text display and typeface pairings.</p>
 					<p>Themes come with either a selection of typeface pairings (Default) or a built-in typeface which are already optimised for their use in both heading and body text.</p>
 				</div>
 
-				<div id="typography-medium" class="container building-block__tip">
+				<div id="typography-medium" class="building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p>Use only ONE typeface for body text and headings, but make sure that it includes at least italics & a bolder weight.</p>
 					<p>Careful: a <em>display</em> typeface is not designed to be used in body text; it will not be legible.</p>
@@ -222,7 +220,7 @@
 					</div>
 				</div>
 
-				<div id="typography-high" class="container building-block__tip">
+				<div id="typography-high" class="building-block__tip">
 					<h3>Higher cost & effort</h3>
 					<p>Pair two typefaces based on certain properties, such as <a href="https://en.wikipedia.org/wiki/X-height" target="_blank" rel="noreferrer">x-height<a/>, <a href="https://www.creativebloq.com/features/5-traits-that-define-a-typefaces-personality" target="_blank" rel="noreferrer">personality</a>, history, type designer or foundry&hellip;</p>
 					<p>Many designers regularly compile recommended font pairings. You may find inspiration there:</p>
@@ -254,13 +252,13 @@
 		</section>
 
 		<!-- Logo choices -->
-		<section class="building-block">
+		<section class="container building-block">
 			<header class="building-block__header" onclick="showStep(logo);">
 				<h2>Logo</h2>
 			</header>
 
 			<section id="logo" class="building-block__body">
-				<div class="container building-block__intro arrow-down">
+				<div class="building-block__intro arrow-down">
 					<p>Display a simple & versatile logo for use in various contexts.</p>
 					<p>A logo consists of an image file that is generally either&hellip;</p>
 					<ol>
@@ -271,7 +269,7 @@
 					<p>In some cases, a journal might need an image file (in SVG, PNG formats) of their logo to use on other platforms, such as social media profile photos and PDF articles and reports.</p>
 				</div>
 
-				<div class="container building-block__cost-levels">
+				<div class="building-block__cost-levels">
 					<p>Do you want to create a logo of your journal title and/or abbreviation to be used on other platforms?</p>
 					<div class="choices">
 						<button class="choice" onclick="showStep(logoLow)">I don’t need one now</button>
@@ -280,14 +278,14 @@
 					</div>
 				</div>
 
-				<div id="logo-low" class="container building-block__tip">
+				<div id="logo-low" class="building-block__tip">
 					<h3>Lower cost & effort</h3>
 					<p>If you don’t need a logo in image format, using plain text to display your journal title is always the simplest option.</p>
 					<p>You can let the theme handle the title display and focus on personalising your colour palette & visuals (cover images, homepage image).</p>
 					<p>Bonus: displaying your journal title and abbreviation in plain text can help improve your website’s accessibility & SEO!</p>
 				</div>
 
-				<div id="logo-medium" class="container building-block__tip">
+				<div id="logo-medium" class="building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p><a href="https://picas.now.sh/" target="_blank" rel="noreferrer">This simple web app</a> generates high-resolution logotypes in PNG using Google Fonts.</p>
 					<p>Avoid displaying long journal titles in logos. Use a logotype <em>only</em> if your journal has a short title or an abbreviation.</p>
@@ -309,7 +307,7 @@
 					</div>
 				</div>
 
-				<div id="logo-high" class="container building-block__tip">
+				<div id="logo-high" class="building-block__tip">
 					<h3>Higher cost & effort</h3>
 					<p>Some apps generate clean PNG and/or SVG logos on the fly, without the need for a graphic editor. Careful: most require you to create an account and are not free.</p>
 					<ul>
@@ -341,19 +339,19 @@
 		</section>
 
 		<!-- Visual choices -->
-		<section class="building-block">
+		<section class="container building-block">
 			<header class="building-block__header" onclick="showStep(visuals);">
 				<h2>Visuals</h2>
 			</header>
 
 			<section id="visuals" class="building-block__body">
-				<div class="container building-block__intro arrow-down">
+				<div class="building-block__intro arrow-down">
 					<p>Use high-quality photographs & illustrations.</p>
 					<p>In OJS 3, besides the logo, you can upload visuals as homepage image (Default, Health Sciences) or a header image (Clasic, Immersion), as well as article images. Some themes (Immersion) also allow you to upload an image for an issue section.
 					</p>
 				</div>
 
-				<div class="container building-block__cost-levels">
+				<div class="building-block__cost-levels">
 					<p>Do you want to source additional visuals to supplement your journal’s website?</p>
 					<div class="choices">
 						<button class="choice" onclick="showStep(visualsLow)">No</button>
@@ -361,13 +359,13 @@
 					</div>
 				</div>
 
-				<div id="visuals-low" class="container building-block__tip">
+				<div id="visuals-low" class="building-block__tip">
 					<h3>Lower cost & effort</h3>
 					<p>Invest time and effort in a high-quality logo, and rely on the nice theme, colour and typography choices you’ve made.</p>
 					<p>If available, use your own articles’ diagrams and photos (but make sure to always request a hi-res version of them in PNG).</p>
 				</div>
 
-				<div id="visuals-medium" class="container building-block__tip">
+				<div id="visuals-medium" class="building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p>Find royalty-free photographs and illustrations: always in high-resolution PNG or SVG, without watermarks.</p>
 					<ul>
