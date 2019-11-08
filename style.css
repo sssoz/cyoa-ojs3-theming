@@ -104,6 +104,8 @@ section {
 }
 
 footer {
+	padding-top: 3em;
+	padding-bottom: 3em;
 	font-size: 0.75em;
 }
 
@@ -124,7 +126,8 @@ footer p {
 }
 
 .main-header {
-	padding: 2em 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 	border-bottom: 1px dotted;
 }
 
