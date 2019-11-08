@@ -234,15 +234,6 @@ section {
   bottom: -55px;
 }
 
-.building-block:first-child .building-block__intro.arrow:before {
-	bottom: -110px;
-  height: 110px;
-}
-
-.building-block:first-child .building-block__intro.arrow:after {
-  bottom: -115px;
-}
-
 .choices.arrow:before {
 	bottom: -60px;
   height: 60px;
