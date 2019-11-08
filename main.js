@@ -24,23 +24,23 @@ var start      			  	 	= document.getElementById('start'),
 		visualsMediumMore			= document.getElementById('visuals-medium-more');
 
 function showStep(step) {
-	var clickedElement = event.target;
+	var clickedElem			 		= event.target;
 
 	step.classList.toggle("open");
 
-	clickedElement.classList.toggle("clicked");
+	clickedElem.classList.toggle("clicked");
 
-	if (clickedElement.classList.contains("choice")) {
-		var parent = clickedElement.closest(".building-block__cost-levels, .choices"),
-				siblings = clickedElement.parentNode.children;
+	if (clickedElem.classList.contains("choice")) {
+		var parent = clickedElem.closest(".building-block__cost-levels, .choices"),
+				siblings = clickedElem.parentNode.children;
 
 		// Display down arrow
-		parent.classList.toggle("arrow-down");
+		parent.classList.toggle("arrow");
 		parent.scrollIntoView({behavior: "smooth"});
 
 		// Hide other choices
 		for (var i = 0; i < siblings.length; i++) {
-			if (siblings[i] !== clickedElement) {
+			if (siblings[i] !== clickedElem) {
 				siblings[i].classList.toggle("hide");
 			}
 		}

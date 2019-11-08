@@ -197,81 +197,10 @@ section {
 }
 
 /* Arrows */
-.arrow-left:before,
-.arrow-right:before,
-.arrow-up:before,
-.arrow-down:before {
+.arrow:before {
   content: " ";
   position: absolute;
   background-color: #1A202C;
-}
-
-.arrow-left:after,
-.arrow-right:after,
-.arrow-up:after,
-.arrow-down:after {
-  content: " ";
-  position: absolute;
-}
-
-.arrow-left:before {
-  left: -41px;
-  height: 2px;
-  width: 40px;
-  top: 50%;
-  margin-top: -1px;
-}
-
-.arrow-left:after {
-  top: 50%;
-  left: -43px;
-  margin-top: -8px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-right: 8px solid #1A202C;
-}
-
-.arrow-right:before {
-  right: -41px;
-  height: 2px;
-  width: 40px;
-  top: 50%;
-  margin-top: -1px;
-}
-
-.arrow-right:after {
-  top: 50%;
-  right: -43px;
-  margin-top: -8px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid #1A202C;
-}
-
-.arrow-up:before {
-  top: -41px;
-  width: 2px;
-  height: 40px;
-  left: 50%;
-  margin-left: -1px;
-}
-
-.arrow-up:after {
-  left: 50%;
-  top: -43px;
-  margin-left: -8px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #1A202C;
-}
-
-.arrow-down:before {
   bottom: -41px;
   width: 2px;
   height: 40px;
@@ -279,7 +208,9 @@ section {
   margin-left: -1px;
 }
 
-.arrow-down:after {
+.arrow:after {
+  content: " ";
+  position: absolute;
   left: 50%;
   bottom: -43px;
   margin-left: -8px;
