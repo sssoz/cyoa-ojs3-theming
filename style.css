@@ -85,8 +85,7 @@ main {
 
 section {
   width: auto;
-  padding: 0 0.75em 0.75em 0.75em;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .container {
@@ -97,6 +96,7 @@ section {
 @media (min-width: 768px) {
 	.container {
 		width: 50%;
+		padding: 1em;
 	}
 }
 
@@ -150,6 +150,7 @@ section {
 
 .building-block__tip-more {
 	margin-top: 65px;
+	margin-bottom: 0.75em;
 }
 
 .building-block p,
