@@ -31,7 +31,7 @@ function showStep(step) {
 	clickedElem.classList.toggle("clicked");
 
 	if (clickedElem.classList.contains("choice")) {
-		var parent = clickedElem.closest(".building-block__cost-levels, .choices"),
+		var parent = clickedElem.closest(".choices"),
 				siblings = clickedElem.parentNode.children;
 
 		// Display down arrow

@@ -134,7 +134,8 @@ section {
 
 .building-block__intro,
 .building-block__cost-levels,
-.building-block__tip {
+.building-block__tip,
+.building-block__tip-more {
 	display: block;
 	position: relative;
   padding: 0.75em 0.75em 0 0.75em;
@@ -147,13 +148,18 @@ section {
 	margin-top: 55px;
 }
 
+.building-block__tip-more {
+	margin-top: 65px;
+}
+
 .building-block p,
 .building-block li,
 .building-block h3 {
 	text-align: left;
 }
 
-.building-block__tip {
+.building-block__tip,
+.building-block__tip-more {
 	display: none;
 }
 
@@ -201,9 +207,7 @@ section {
   content: " ";
   position: absolute;
   background-color: #1A202C;
-  bottom: -41px;
   width: 2px;
-  height: 40px;
   left: 50%;
   margin-left: -1px;
 }
@@ -212,11 +216,37 @@ section {
   content: " ";
   position: absolute;
   left: 50%;
-  bottom: -43px;
   margin-left: -8px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #1A202C;
+}
+
+.building-block__intro.arrow:before {
+	bottom: -50px;
+  height: 50px;
+}
+
+.building-block__intro.arrow:after {
+  bottom: -55px;
+}
+
+.building-block:first-child .building-block__intro.arrow:before {
+	bottom: -110px;
+  height: 110px;
+}
+
+.building-block:first-child .building-block__intro.arrow:after {
+  bottom: -115px;
+}
+
+.choices.arrow:before {
+	bottom: -60px;
+  height: 60px;
+}
+
+.choices.arrow:after {
+	bottom: -65px;
 }
