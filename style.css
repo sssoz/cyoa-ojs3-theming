@@ -1,4 +1,6 @@
 /* General */
+@import url('https://rsms.me/inter/inter.css');
+
 * , *:before, *:after {
   box-sizing: border-box;
 		margin: 0;
@@ -6,9 +8,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
 	font-size: 18px;
   line-height: 1.35;
+	letter-spacing: -0.01px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   color: #1A202C;
@@ -16,11 +19,16 @@ body {
 
 h1, h2, h3 {
 	margin: 0 0 1em 0;
-	font-weight: 400;
+	letter-spacing: -0.35px;
 }
 
 h1, h2 {
 	font-size: 1.75em;
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 800;
 }
 
 h2 {
@@ -28,7 +36,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1.25em;
+	font-size: 1em;
+	font-weight: 800;
 }
 
 a {
@@ -184,7 +193,7 @@ section {
 	padding: 0.5em;
 	margin: 0 auto 0.75em auto;
 	border: 1px solid;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inter', sans-serif;
 	background-color: transparent;
 	width: 100%;
 }
