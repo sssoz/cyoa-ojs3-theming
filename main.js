@@ -1,4 +1,4 @@
-var intro      			  	 	= document.getElementById('intro'),
+var start      			  	 	= document.getElementById('start'),
 		colours								= document.getElementById('colours'),
 		coloursLow						= document.getElementById('colours-low'),
 		coloursMedium					= document.getElementById('colours-medium'),
