@@ -25,15 +25,15 @@ var start      			  	 	= document.getElementById('start'),
 		visualsMediumMore			= document.getElementById('visuals-medium-more');
 
 function showStep(step) {
-	var clickedElem			 		= event.target;
+	var activeElem			 		= event.target;
 
 	step.classList.toggle("open");
 
-	clickedElem.classList.toggle("clicked");
+	activeElem.classList.toggle("active");
 
-	if (clickedElem.classList.contains("choice")) {
-		var parent = clickedElem.closest(".choices"),
-				siblings = clickedElem.parentNode.children;
+	if (activeElem.classList.contains("choice")) {
+		var parent = activeElem.closest(".choices"),
+				siblings = activeElem.parentNode.children;
 
 		// Display down arrow
 		parent.classList.toggle("arrow");
@@ -41,7 +41,7 @@ function showStep(step) {
 
 		// Hide other choices
 		for (var i = 0; i < siblings.length; i++) {
-			if (siblings[i] !== clickedElem) {
+			if (siblings[i] !== activeElem) {
 				siblings[i].classList.toggle("hide");
 			}
 		}

@@ -254,7 +254,7 @@ footer p {
 	width: 100%;
 }
 
-.choice.clicked {
+.choice.active {
 	background: #1A202C;
 	color: #FFF;
 	border-color: #1A202C;
