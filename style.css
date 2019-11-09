@@ -160,7 +160,6 @@ footer p {
 .main-header {
 	padding-top: 2em;
 	padding-bottom: 2em;
-	border-bottom: 1px dotted;
 }
 
 .main-header__logo {
@@ -174,7 +173,6 @@ footer p {
   display: block;
 	padding-top: 0;
 	padding-bottom: 0;
-	border-bottom: 1px dotted;
 	counter-increment: building-blocks;
 }
 
@@ -186,6 +184,7 @@ footer p {
 	padding: 1em 0;
 	background-color: inherit;
 	cursor: pointer;
+	border-top: 1px dotted;
 }
 
 .building-block__header h2:before {
