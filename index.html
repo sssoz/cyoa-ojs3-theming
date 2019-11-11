@@ -73,12 +73,12 @@
 			<section id="colours" class="building-block__body">
 				<div class="building-block__intro arrow">
 					<p><strong>Create a simple & cohesive colour palette.</strong></p>
-					<p>Most OJS 3 themes have built-in settings that allow you to select one primary colour. Immersion is a lot more customisable and lets you select a different colour per section.</p>
+					<p>Most OJS 3 themes have built-in settings that allow you to select one primary colour. Immersion is a lot more customisable and lets you select a different colour per section within an issue.</p>
 					<p>Using a polychromatic colour scheme requires more effort in terms of design research and CSS modifications.</p>
 				</div>
 
 				<div class="building-block__cost-levels">
-					<p>What level of time and effort do you want to put into this?</p>
+					<p>What level of time and effort are you able to put into this?</p>
 					<div class="choices">
 						<button class="choice" onclick="showStep(coloursLow)">Lower</button>
 						<button class="choice" onclick="showStep(coloursMedium)">Medium</button>
@@ -303,14 +303,15 @@
 					<h3>Lower cost & effort</h3>
 					<p>If you don’t need a logo in image format, using plain text to display your journal title is always the simplest option.</p>
 					<p>You can let the theme handle the title display and focus on personalising your colour palette & visuals (cover images, homepage image).</p>
-					<p>Bonus: displaying your journal title and abbreviation in plain text can help improve your website’s accessibility & SEO!</p>
 				</div>
 
 				<div id="logo-medium" class="building-block__tip">
 					<h3>Medium cost & effort</h3>
 					<p><a href="https://picas.now.sh/" target="_blank" rel="noreferrer">This simple web app</a> generates high-resolution logotypes in PNG using Google Fonts. Your logotype’s font does not need to be the same as your website’s body text font.</p>
 					<p>Avoid displaying long journal titles in logos. Use a logotype <em>only</em> if your journal has a short title or an abbreviation.</p>
-					<p>⚠️&nbsp;Warning: do NOT take a screen capture of text to use as a logo. It will not be high-quality, nor reusable or accessible.</p>
+					<p>Save these files somewhere safe, so that the journal may continue to use a consistent logo for many years to come</p>
+					<p>⚠️&nbsp;Warning: do NOT take a screen capture of text to use as a logo. It will not be high-quality, nor reusable in different contexts.</p>
+					<p><em>Note on accessibility:</em> when uploading your logo, make sure to fill out the "Alternate text" with your journal title.</p>
 
 					<div class="choices" onClick="showStep(logoMediumMore);">
 						<button class="choice">I want to make my own</button>
@@ -323,7 +324,9 @@
 						<ol>
 							<li>Avoid displaying long journal titles. Use a logotype <em>only</em> if your journal has a short title or an abbreviation.</li>
 							<li>Create a black version and a white version with transparent backgrounds, so that they may be used on backgrounds of different colours.</li>
-							<li>Make sure to export your logotypes in both SVG and in PNG. Save these files somewhere safe.</li>
+							<li>Make sure the image has a width of at least 500px; OJS 3 themes should resize them automatically to fit the layout.</li>
+							<li>Export your logotypes in both SVG and in PNG. Save these files somewhere safe, so that the journal may continue to use a consistent logo for many years to come.</li>
+							<li>You should have four files in total to be used on your site and any other platforms and documents</li>
 						</ol>
 					</div>
 				</div>
@@ -336,8 +339,9 @@
 						<li><a href="https://brandmark.io/" target="_blank" rel="noreferrer">Brandmark</a>, another generator (NOT free)</li>
 						<li><a href="https://logo.shapefactory.co/" target="_blank" rel="noreferrer">ShapeFactory</a>’s logo maker (NOT free)</li>
 					</ul>
-					<p>If you do use any of these services, try to save both the SVG and PNG versions.</p>
-					<p>⚠️&nbsp;Warning: do NOT take a screen capture of text to use as a logo. It will not be high-quality, nor reusable or accessible.</p>
+					<p>If you do use any of these services, try to save both the SVG and PNG versions. Save these files somewhere safe, so that the journal may continue to use a consistent logo for many years to come</p>
+					<p>⚠️&nbsp;Warning: do NOT take a screen capture of text to use as a logo. It will not be high-quality, nor reusable in different contexts.</p>
+					<p><em>Note on accessibility:</em> when uploading your logo, make sure to fill out the "Alternate text" with your journal title.</p>
 
 					<div class="choices" onClick="showStep(logoHighMore);">
 						<button class="choice">I want to make my own&nbsp;/ I don’t like these ones</button>
@@ -348,10 +352,10 @@
 						<p>I use <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> for UI design but it can also be used to design a simple logotype. It’s a powerful design app, and free for up to three projects.</p>
 						<ol>
 							<li>Find a royalty-free SVG icon on <a href="https://thenounproject.com/" target="_blank" rel="noreferrer">The Noun Project</a></li>
-							<li>Open it in Figma</li>
-							<li>Using your selected typeface, play around with the editor to create a simple black logo (on a transparent background)</li>
-							<li>Make a white (on transparent background) version</li>
-							<li>Export the logomarks in SVG and PNG.</li>
+							<li>Avoid displaying long journal titles. Try to use your journal’s abbreviation.</li>
+							<li>Create a black version and a white version with transparent backgrounds, so that they may be used on backgrounds of different colours.</li>
+							<li>Make sure the image has a width of at least 500px; OJS 3 themes should resize them automatically to fit the layout.</li>
+							<li>Export your logotypes in both SVG and in PNG. Save these files somewhere safe, so that the journal may continue to use a consistent logo for many years to come.</li>
 							<li>You should have four files in total to be used on your site and any other platforms and documents</li>
 						</ol>
 					</div>
