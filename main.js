@@ -22,7 +22,9 @@ var start      			  	 	= document.getElementById('start'),
 		visuals								= document.getElementById('visuals'),
 		visualsLow						= document.getElementById('visuals-low'),
 		visualsMedium					= document.getElementById('visuals-medium'),
-		visualsMediumMore			= document.getElementById('visuals-medium-more');
+		visualsMediumMore			= document.getElementById('visuals-medium-more'),
+
+		theme									= document.getElementById('theme');
 
 function showStep(step) {
 	var activeElem			 		= event.target;
