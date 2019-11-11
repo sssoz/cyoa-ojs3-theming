@@ -47,6 +47,7 @@ function showStep(step) {
 				siblings[i].classList.toggle("hide");
 			}
 		}
+		
 	} else {
 		var container = step.closest(".building-block");
 		container.scrollIntoView({behavior: "smooth"});

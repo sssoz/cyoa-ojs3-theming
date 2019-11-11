@@ -54,6 +54,23 @@ body {
   color: #1A202C;
 }
 
+main {
+	width: 100%;
+	margin: 0;
+	counter-reset: building-blocks -1;
+}
+
+section {
+  width: auto;
+  margin: 1em auto;
+}
+
+footer {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	font-size: 0.75em;
+}
+
 h1, h2, h3, h4 {
 	margin: 0 0 1em 0;
 }
@@ -89,6 +106,16 @@ hr {
 	margin-bottom: 1em;
 }
 
+sup {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+footer p {
+	padding-right: 30%;
+}
+
 /* Lists*/
 ol {
 	counter-reset: ordered-list;
@@ -121,34 +148,30 @@ li li:before {
 	margin-left: 0.75em;
 }
 
-sup {
-	vertical-align: baseline;
-	position: relative;
-	top: -0.4em;
+/* Forms */
+form {
+	padding: 1em;
+	margin-bottom: 1em;
+	border: 1px solid;
+}
+
+label {
+	display: block;
+	margin: 0.5em 0;
+}
+
+button, .btn {
+	padding: 0.5em 0.75em;
+	margin-top: 1em;
+	display: inline-block;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 1;
+	border: 1px solid;
 }
 
 /* Layout */
-main {
-	width: 100%;
-	margin: 0;
-	counter-reset: building-blocks -1;
-}
-
-section {
-  width: auto;
-  margin: 1em auto;
-}
-
-footer {
-	padding-top: 5em;
-	padding-bottom: 5em;
-	font-size: 0.75em;
-}
-
-footer p {
-	padding-right: 30%;
-}
-
 .container {
 	margin: auto;
 	padding: 1em;
@@ -206,7 +229,7 @@ footer p {
 .building-block__tip-more {
 	display: block;
 	position: relative;
-  padding: 0.75em 0.75em 0 0.75em;
+  padding: 1em 1em 0 1em;
   border: 1px dotted;
 	margin: 0 auto;
 }
@@ -250,7 +273,7 @@ footer p {
 	cursor: pointer;
 	font-size: 16px;
 	padding: 0.5em;
-	margin: 0 auto 0.75em auto;
+	margin: 0 auto 1em auto;
 	border: 1px solid;
 	font-family: 'Inter', sans-serif;
 	background-color: transparent;
