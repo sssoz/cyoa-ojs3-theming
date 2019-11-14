@@ -24,7 +24,12 @@ var start      			  	 	= document.getElementById('start'),
 		visualsMedium					= document.getElementById('visuals-medium'),
 		visualsMediumMore			= document.getElementById('visuals-medium-more'),
 
-		theme									= document.getElementById('theme');
+		theme									= document.getElementById('theme'),
+		themeManuscript				= document.getElementById('theme-manuscript'),
+		themeHealthSciences		= document.getElementById('theme-health-sciences'),
+		themeClassic					= document.getElementById('theme-classic'),
+		themeImmersion				= document.getElementById('theme-immersion'),
+		themePragma						= document.getElementById('theme-pragma');
 
 function showStep(step) {
 	var activeElem			 		= event.target;
@@ -47,7 +52,7 @@ function showStep(step) {
 				siblings[i].classList.toggle("hide");
 			}
 		}
-		
+
 	} else {
 		var container = step.closest(".building-block");
 		container.scrollIntoView({behavior: "smooth"});
